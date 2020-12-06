@@ -208,6 +208,7 @@ struct entry: View {
         TextField("num", text: data)
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .frame(maxWidth: 50)
+            .keyboardType(.numberPad)
     }
 }
 
