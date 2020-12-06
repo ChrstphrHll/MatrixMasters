@@ -174,8 +174,10 @@ struct ContentView: View {
             Button("Check Answer"){
                 if self.matrixEqual(self.extractAnswer(rows: Int(self.rows), cols: Int(self.cols), data: self.arr), self.matrixMul(self.m1, self.m2)){
                     self.correct = true
+                    self.incorrect = false
                 } else {
                     self.incorrect = true
+                    self.correct = false
                 }
             }
             .frame(width: 300, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
